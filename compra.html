@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compras</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="icon" href="img/RDD1.ico">
+    <script src="https://kit.fontawesome.com/50addaa4fa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   
+</head>
+<body id="body">
+    
+<header class="header">
+       
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+            <div class="logo">
+                <img src="img/logo de la pagina.jpg" width="95" height="95">
+                </div>
+        
+     
+</header>
+
+<div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-book"></i>
+            <h4>Jarabacopias</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="index.html">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="compra.html"class="selected">
+                <div class="option">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h4>compras</h4>
+                </div>
+            </a>
+            
+            
+
+            <a href="Contacto.html">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="trabajadores.html" >
+                <div class="option">
+                    <i class="far fa-address-card" title="Personal"></i>
+                    <h4>Personal</h4>
+                </div>
+            </a>
+
+        </div>
+
+</div>
+
+    <main>
+        <center><h1>Articulos de venta</h1></center>    
+    <BR>
+       
+<div class="posicion">
+                <div class="imagenes">
+                    <center>
+                        <img src="img/lapiz estabilo.jpg" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Caja de Lápiz Stabilo HB No. 2 12/1</p>
+                        <strong>$226.00</strong><br>
+                        <button id="btn" class="boton1" onclick="showPopup('img/lapiz estabilo.jpg', 'Caja de Lápiz Stabilo HB No. 2 12/1', '124')">comprar</button>
+
+                            
+                </center>
+                </div>
+
+                <div class="imagenes">
+                    <center>
+                        <img src="img/cuaderno scribe.jpg" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Cuaderno Profesional Raya Cosido 100 hojas marca Scribe</p>
+                        <strong>$56.14</strong><br>
+                        <button id="btn" class="boton1" onclick="showPopup('img/cuaderno scribe.jpg', 'Cuaderno Profesional Raya Cosido 100 hojas marca Scribe', '124')">comprar</button>
+                </center>
+                </div>
+                <div class="imagenes">
+                    <center>
+                        <img src="img/catedra.webp" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Catedra Jandaia Sport 10M/200H - 200 Hojas</p>
+                        <strong>$304.00</strong><br>
+                        <button id="btn1" class="boton1" onclick="showPopup('img/catedra.webp', 'Catedra Jandaia Sport 10M/200H - 200 Hojas', '304.00')">comprar</button>
+            
+                    </center>
+                </div>
+                <div class="imagenes">
+                    <center>
+                        <img src="img/minastabilo_1024x1024.avif" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Estuche De Minas 0.7 Stabilo</p>
+                        <strong>$24.00</strong><br>
+                        <button id="btn1" class="boton1" onclick="showPopup('img/minastabilo_1024x1024.avif', 'Estuche De Minas 0.7 Stabilo', '24.00')">comprar</button>   
+                </center>
+                
+            </div>
+        </CENTER> 
+    </BR>  
+    <BR>
+        <CENTER>
+            <div class="posicion">
+                <div class="imagenes">
+                    <center>
+                        <img src="img/706320_1024x1024.webp" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Cartulina Plateada</p>
+                        <strong>$50.00</strong><br>
+                        <button id="btn1" class="boton1" onclick="showPopup('img/706320_1024x1024.webp', 'Cartulina Plateada', '50.00')">comprar</button> 
+                            
+                </center>
+                </div>
+
+                <div class="imagenes">
+                    <center>
+                        <img src="img/linpia pizarras.avif" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Limpiador De Pizarra Magica En Spray</p>
+                        <strong>$137.00</strong><br>
+                        <button id="btn1" class="boton1" onclick="showPopup('img/linpia pizarras.avif', 'Limpiador De Pizarra Magica En Spray', '137.00')">comprar</button>   
+                </center>
+                </div>
+                <div class="imagenes">
+                    <center>
+                        <img src="img/marcador negro.avif" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Marcador Para Pizarra Pointer - Negro
+                        </p>
+                        <strong>$24.00</strong><br>
+                        <button id="btn1" class="boton1" onclick="showPopup('img/marcador negro.avif', 'Marcador Para Pizarra Pointer - Negro', '124')">comprar</button>   
+            
+                </center>
+                </div>
+                <div class="imagenes">
+                    <center>
+                        <img src="img/silicon pequeño.avif" width="125" height="125" alt="lapiz" >
+                        <br>
+                        <p>Silicona Líquida Fixo 60ml</p>
+                        <strong>$39.00</strong><br>
+                        <button id="btn1" class="boton1" onclick="showPopup('img/silicon pequeño.avif', 'Silicona Líquida Fixo 60ml', '39.00')">comprar</button>   
+                </center>
+                
+            </div>
+            <div class="imagenes">
+                <center>
+                    <img src="img/silicon.avif" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Silicona Líquida Fixo 30ml</p>
+                    <strong>$25.00</strong><br>
+                    <button id="btn" class="boton1" onclick="showPopup('img/silicon.avif', 'Silicona Líquida Fixo 30ml', '25.00')">comprar</button>
+                        
+            </center>
+            </div>
+
+            <div class="imagenes">
+                <center>
+                    <img src="img/silicon mediano.avif" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Silicona Líquida Fixo 100ml</p>
+                    <strong>$ 87.00</strong><br>
+                        <button id="btn1" class="boton1" onclick="showPopup('img/silicon mediano.avif', 'Silicona Líquida Fixo 100ml', '87.00')">comprar</button>
+            </center>
+            </div>
+            <div class="imagenes">
+                <center>
+                    <img src="img/galon.avif" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Galón De Ega Blanca</p>
+                    <strong>$395.00</strong><br>
+                    <button id="btn1" class="boton1" onclick="showPopup('img/galon.avif', 'Galón De Ega Blanca', '395.00')">comprar</button>
+        
+                </center>
+            </div>
+            <div class="imagenes">
+                <center>
+                    <img src="img/ega.avif" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Ega Blanca 250ML 8OZ - Facela</p>
+                    <strong>$72.00</strong><br>
+                    <button id="btn1" class="boton1" onclick="showPopup('img/ega.avif', 'Ega Blanca 250ML 8OZ - Facela', '72.00')">comprar</button>   
+            </center>
+            
+        </div>
+    </CENTER> 
+</BR>  
+<BR>
+    <CENTER>
+        <div class="posicion">
+            <div class="imagenes">
+                <center>
+                    <img src="img/hojas ralladas.webp" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Paquete De Hojas Perforadas 3 Hoyos - 150/1</p>
+                    <strong>$235.00</strong><br>
+                    <button id="btn1" class="boton1" onclick="showPopup('img/hojas ralladas.webp', ' Paquete De Hojas Perforadas 3 Hoyos - 150/1 ', '235.00')">comprar</button>   
+                        
+            </center>
+            </div>
+
+            <div class="imagenes">
+                <center>
+                    <img src="img/tijera.webp" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Tijera Mango Negro 8"- Talbot</p>
+                    <strong>$92.00</strong><br>
+                    <button id="btn1" class="boton1" onclick="showPopup('img/tijera.webp', 'Tijera Mango Negro 8', '92.00')">comprar</button>   
+            </center>
+            </div>
+            <div class="imagenes">
+                <center>
+                    <img src="img/paquete de vejigas.avif" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Paquete De Vejigas #9 Colores Surtidos - 144/1</p>
+                    <strong>$323.00</strong><br>
+                    <button id="btn1" class="boton1" onclick="showPopup('img/paquete de vejigas.avif', 'Paquete De Vejigas #9 Colores Surtidos - 144/1', '323.00')">comprar</button>   
+        
+            </center>
+            </div>
+            <div class="imagenes">
+                <center>
+                    <img src="img/borrador.avif" width="125" height="125" alt="lapiz" >
+                    <br>
+                    <p>Borrador Para Pizarra</p>
+                    <strong>$124</strong><br>
+                    <button id="btn1" class="boton1" onclick="showPopup('img/borrador.avif', 'Borrador Para Pizarra','55.00')">comprar</button> 
+            </center>
+            
+        </div>
+      
+    </BR>  
+</div>
+<!-- Pestaña emergente -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img id="popup-image" src="" alt="Producto">
+        <p id="popup-description">Descripción del producto</p>
+        <p id="popup-price">Precio: $</p> <!-- Nuevo elemento para mostrar el precio -->
+        <div class="counter">
+            <button onclick="decreaseQuantity()">-</button>
+            <span id="quantity">0</span>
+            <button onclick="increaseQuantity()">+</button>
+        </div>
+        <button onclick="buyProduct()" class="buy-btn">Comprar</button>
+    </div>
+</div>
+
+    </main>
+    <br>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="img/logo de la pagina.jpg" width="50" height="50" alt="Logo">
+            </div>
+            <div class="footer__info">
+                 <i>informacion de Joarlin Rosario</i>
+                <p>Dirección: Jarabacoa,avenida la confluencia </p>
+                <p>Teléfono: 809-214-0913</p>
+                <p>Email: joarlinrosario21@gmail.com</p>
+            </div>
+            <div class="footer__social">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Jarabacopias. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <SCript>
+        // Mostrar pestaña emergente
+        function showPopup(imageSrc, description, price) {
+            document.getElementById('popup-image').src = imageSrc;
+            document.getElementById('popup-description').innerText = description;
+            document.getElementById('popup-price').innerText = 'Precio: $' + price; // Mostramos el precio
+            document.getElementById('quantity').innerText = '1'; // Establecemos el número inicial en 1
+            document.getElementById('popup').style.display = 'block';
+        }
+        
+
+// Cerrar pestaña emergente
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+// Cambiar cantidad
+function changeQuantity(value) {
+    let quantity = parseInt(document.getElementById('quantity').innerText);
+    quantity += value;
+    if (quantity < 0) quantity = 0; // Aseguramos que no sea negativo
+    document.getElementById('quantity').innerText = quantity;
+}
+
+function increaseQuantity() {
+    changeQuantity(1);
+}
+
+function decreaseQuantity() {
+    changeQuantity(-1); // Cambiamos a -1 para decrementar en lugar de -2
+}
+
+// Comprar producto
+function buyProduct() {
+    closePopup();
+    Swal.fire({
+        title: 'Compra Exitosa',
+        text: 'Gracias por su compra',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+    });
+}
+
+// Ajustar tamaño de la pestaña emergente
+function adjustPopupSize() {
+    var popupContent = document.querySelector('.popup-content');
+    var windowHeight = window.innerHeight;
+    var windowWidth = window.innerWidth;
+    var popupHeight = popupContent.clientHeight;
+    var popupWidth = popupContent.clientWidth;
+
+    // Ajustamos la posición vertical
+    if (popupHeight >= windowHeight) {
+        popupContent.style.top = '10px'; // Si la altura es mayor a la ventana, dejamos un espacio superior
+    } else {
+        popupContent.style.top = '50%';
+    }
+
+    // Ajustamos la posición horizontal
+    if (popupWidth >= windowWidth) {
+        popupContent.style.left = '10px'; // Si el ancho es mayor a la ventana, dejamos un espacio a la izquierda
+    } else {
+        popupContent.style.left = '50%';
+    }
+    
+}
+</script>
+<script>
+    // Muestra un mensaje con SweetAlert2 al cargar la página
+    document.addEventListener('DOMContentLoaded', (event) => {
+        Swal.fire({
+            title: 'Compras',
+            text: 'Estás a punto de ver artículos disponibles para la venta. ¡Disfruta de tus compras!.',
+            icon: 'info',
+            timer: 5000, // El mensaje se cerrará automáticamente después de 5 segundos
+            timerProgressBar: true,
+            showConfirmButton: false
+        });
+    });
+</script>
+    <script src="js/script.js"></script>
+
+</html>

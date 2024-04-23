@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="icon" href="img/RDD1.ico">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/50addaa4fa.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header class="header">
+       
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+            <div class="logo">
+                <img src="img/logo de la pagina.jpg" width="95" height="95">
+                </div>
+        
+     
+</header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa-solid fa-book"></i>
+            <h4>Jarabacopias</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="index.html">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="compra.html">
+                <div class="option">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h4>compras</h4>
+                </div>
+            </a>
+            
+        
+
+            <a href="Contacto.html" class="selected">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+            <a href="trabajadores.html">
+                <div class="option">
+                    <i class="far fa-address-card" title="Personal"></i>
+                    <h4>Personal</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <main>
+       <center><h1>Contactos</h1><br></center> 
+    <center>
+        <img src="img/whasap.png"width="125px"height="125" alt=""><br>
+    </center>
+        <center><h3>809-605-6410</h3></center>
+        <center>
+            <img src="img/pngwing.com (1).png"width="125px"height="140px" alt=""><br>
+        </center>
+            <center><h3>Jarabacopias@gmail.com</h3></center>
+        </main><center>
+            <img src="img/pngwing.com.png"width="125px"height="125" alt=""><br>
+        </center>
+            <center><h3>Jarabacopias@hotmail.com</h3></center>
+        </main>
+    </main>
+    <br>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="img/logo de la pagina.jpg" width="50" height="50" alt="Logo">
+            </div>
+            <div class="footer__info">
+                <i>informacion de Joarlin Rosario</i>
+                <p>Dirección: Jarabacoa,avenida la confluencia </p>
+                <p>Teléfono: 809-214-0913</p>
+                <p>Email: joarlinrosario21@gmail.com</p>
+            </div>
+            <div class="footer__social">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Jarabacopias. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        // Muestra un mensaje con SweetAlert2 al cargar la página
+        document.addEventListener('DOMContentLoaded', (event) => {
+            Swal.fire({
+                title: 'Contacta con nosotros',
+                text: 'Aquí encontrarás diferentes formas de comunicarte con Jarabacopias.',
+                icon: 'info',
+                timer: 5000, // El mensaje se cerrará automáticamente después de 5 segundos
+                timerProgressBar: true,
+                showConfirmButton: false
+            });
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
